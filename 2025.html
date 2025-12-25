@@ -484,14 +484,6 @@
                         <td class="total-changes">538</td>
                     </tr>
 
-                    <tr>
-                        <td class="lang-name">.xml</td>
-                        <td class="lines-added">+164</td>
-                        <td class="lines-removed">-26</td>
-                        <td class="net-change positive">+138</td>
-                        <td class="total-changes">190</td>
-                    </tr>
-
                     </tbody>
                 </table>
             </div>
@@ -1012,7 +1004,7 @@
     </div>
 
     <div class="footer">
-        <p>Report generated on December 25, 2025 at 11:55</p>
+        <p>Report generated on December 25, 2025 at 11:58</p>
     </div>
 </div>
 
@@ -1083,7 +1075,7 @@
 
     // Languages chart
     const languagesCtx = document.getElementById('languagesChart').getContext('2d');
-    const languagesData = {'.py': 303, '.js': 145, '.html': 128, '.go': 44, '.css': 36, '.java': 24, '.xml': 13, '.php': 7, '.vue': 7};
+    const languagesData = {'.py': 303, '.js': 145, '.html': 128, '.go': 44, '.css': 36, '.java': 24, '.php': 7, '.vue': 7};
     new Chart(languagesCtx, {
         type: 'pie',
         data: {
@@ -1118,7 +1110,7 @@
 
     // Languages by code changes chart
     const languagesLinesCtx = document.getElementById('languagesLinesChart').getContext('2d');
-    const languagesLinesData = {'.js': {'added': 34443, 'removed': 2020}, '.py': {'added': 25520, 'removed': 7086}, '.css': {'added': 11780, 'removed': 1600}, '.html': {'added': 4386, 'removed': 1917}, '.go': {'added': 3980, 'removed': 1606}, '.php': {'added': 1177, 'removed': 199}, '.java': {'added': 1176, 'removed': 10}, '.vue': {'added': 385, 'removed': 153}, '.xml': {'added': 164, 'removed': 26}};
+    const languagesLinesData = {'.js': {'added': 34443, 'removed': 2020}, '.py': {'added': 25520, 'removed': 7086}, '.css': {'added': 11780, 'removed': 1600}, '.html': {'added': 4386, 'removed': 1917}, '.go': {'added': 3980, 'removed': 1606}, '.php': {'added': 1177, 'removed': 199}, '.java': {'added': 1176, 'removed': 10}, '.vue': {'added': 385, 'removed': 153}};
     const langLabels = Object.keys(languagesLinesData);
     const langAdded = langLabels.map(l => languagesLinesData[l].added);
     const langRemoved = langLabels.map(l => languagesLinesData[l].removed);
